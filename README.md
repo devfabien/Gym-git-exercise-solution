@@ -299,3 +299,117 @@ FABIEN@DESKTOP-1HATNBG MINGW64 ~/Documents/TheGym/Gym git exercise (ft/bundle-2)
 
 
  ```
+  ### Exercise 2
+
+  ```bash
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (dev)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git pull
+Already up to date.
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/service-redesign)
+$ git status
+On branch ft/service-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   service.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/service-redesign)
+$ git add .
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/service-redesign)
+$ git commit -m "adding services"
+[ft/service-redesign 79dc58f] adding services
+ 1 file changed, 5 insertions(+)
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/service-redesign)
+
+S C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git push --set-upstream origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 495 bytes | 165.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/devfabien/Gym-git-exercise-solution/pull/new/ft/service-redesign
+remote:
+To https://github.com/devfabien/Gym-git-exercise-solution.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git checkout main
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git status
+On branch main
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   service.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git add .
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git commit -m "modifying service page from main"
+ 1 file changed, 1 insertion(+)
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git push
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 348 bytes | 348.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/devfabien/Gym-git-exercise-solution.git
+   df965a5..492f4ff  main -> main
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git merge main
+Auto-merging service.html
+CONFLICT (content): Merge conflict in service.html
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git diff
+index 88b6010,2e75ad6..0000000
+--- a/service.html
+@@@ -7,10 -7,6 +7,14 @@@
+  </head>
+  <body>
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git merge main
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you merge.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git status
+On branch ft/service-redesign
+Your branch is up to date with 'origin/ft/service-redesign'.
+All conflicts fixed but you are still merging.
+
+Changes to be committed:
+        modified:   service.html
+
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git commit -m "updated service"
+[ft/service-redesign f82c95f] updated service
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 363 bytes | 363.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/devfabien/Gym-git-exercise-solution.git
+   79dc58f..f82c95f  ft/service-redesign -> ft/service-redesign
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution>
+
+  ```
+
+  
