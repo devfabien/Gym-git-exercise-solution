@@ -299,3 +299,231 @@ FABIEN@DESKTOP-1HATNBG MINGW64 ~/Documents/TheGym/Gym git exercise (ft/bundle-2)
 
 
  ```
+
+ ## Bundle3
+
+ ### Exercise 1
+
+ ```bash
+
+ PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git push
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Writing objects: 100% (3/3), 1.41 KiB | 288.00 KiB/s, done.
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/devfabien/Gym-git-exercise-solution.git
+   f82c95f..5e29996  ft/service-redesign -> ft/service-redesign
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git status
+On branch ft/team-page
+Untracked files:
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git add .
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git commit -m "adding team page"
+[ft/team-page 7792da2] adding team page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 team.html
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/team-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git push --set-upstream origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 436 bytes | 436.00 KiB/s, done.
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:
+To https://github.com/devfabien/Gym-git-exercise-solution.git
+ * [new branch]      ft/team-page -> ft/team-page
+branch 'ft/team-page' set up to track 'origin/ft/team-page'.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git checkout ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git log
+Author: devfabien <ish001fabi@gmail.com>
+
+    adding team page
+
+commit 492f4ff26e44081676063fa92c9fc7cd609c95b3 (origin/main, origin/HEAD, main, ft/contact-page)
+Date:   Fri Jul 28 19:07:46 2023 +0200
+
+    modifying service page from main
+
+commit df965a5884f234bd86c609662bdbb2c6f3829753
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git checkout ft/contact-page
+[ft/contact-page 533a6e0] adding team page
+ Date: Mon Jul 31 08:27:15 2023 +0200
+ 1 file changed, 11 insertions(+)
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git status
+On branch ft/contact-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contact.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git add .
+[ft/contact-page ac65d57] adding contact us page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 contact.html
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git push --set-upstream origin ft/contact-page
+Enumerating objects: 7, done.
+Delta compression using up to 4 threads
+Writing objects: 100% (6/6), 709 bytes | 354.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/devfabien/Gym-git-exercise-solution/pull/new/ft/contact-page
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git checkout -b "ft/faq-page"
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git status
+On branch ft/faq-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        faq.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git add .
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git commit -m "adding faq page"
+[ft/faq-page c50f477] adding faq page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git push --set-upstream origin ft/faq-page
+Enumerating objects: 4, done.
+Revert "adding team page"
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 439 bytes | 439.00 KiB/s, done.
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/devfabien/Gym-git-exercise-solution/pull/new/ft/faq-page
+remote:
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git revert 7792da2cb2f7eb7b5d3948ae64916f7e6e142f00     
+[ft/faq-page 80fea19] Revert "adding team page"
+ 1 file changed, 11 deletions(-)
+ delete mode 100644 team.html
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git status
+On branch ft/faq-page
+Your branch is ahead of 'origin/ft/faq-page' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 269 bytes | 269.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/devfabien/Gym-git-exercise-solution.git
+   c50f477..80fea19  ft/faq-page -> ft/faq-page
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution>
+
+ ```
+
+ ### Exercise 2
+
+ ```bash
+Switched to a new branch 'ft/home-page-redesign'
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git checkout main
+Your branch is up to date with 'origin/main'.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git commit -m "adding a welcome text"
+On branch main
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git push
+Everything up-to-date
+M       home.html
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git rebase main
+error: Please commit or stash them.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git checkout main 
+Switched to branch 'main'
+M       home.html
+Your branch is up to date with 'origin/main'.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+  (use "git add <file>..." to update what will be committed)
+        modified:   home.html
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git add .
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git commit -m "adding a welcome text"
+[main f1fd637] adding a welcome text
+ 1 file changed, 1 insertion(+)
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git push
+Enumerating objects: 5, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 348 bytes | 348.00 KiB/s, done.
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/devfabien/Gym-git-exercise-solution.git
+   492f4ff..f1fd637  main -> main
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git status
+On branch ft/home-page-redesign
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git add .
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git commit -m "informing about the branches on homepage"
+[ft/home-page-redesign a8f866b] informing about the branches on homepage
+ 1 file changed, 1 insertion(+)
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (17/17), 3.18 KiB | 650.00 KiB/s, done.
+Total 17 (delta 9), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/devfabien/Gym-git-exercise-solution/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/devfabien/Gym-git-exercise-solution.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> 
+ ```
