@@ -299,3 +299,107 @@ FABIEN@DESKTOP-1HATNBG MINGW64 ~/Documents/TheGym/Gym git exercise (ft/bundle-2)
 
 
  ```
+
+ ## Bundle4
+
+ ### Exercise1
+
+ ```bash
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ ^[[200~echo "# Git-exercise-clone" >> README.md
+git branch -M mainbash: $'\E[200~echo': command not found
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/The Gym/Documents/Gym/Gym-git-
+exercise-solution/.git/
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git add README.md
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git commit -m "first commit"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git branch -M main
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git remote add git-copy https://github.com/devfabien/Git-exercise-clone.git   
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git add .
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git commit -m "changes to the homepage"
+[main 845637e] changes to the homepage
+ 1 file changed, 1 insertion(+)
+
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git push -u git-copy main
+Enumerating objects: 29, done.
+Counting objects: 100% (29/29), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (29/29), 5.22 KiB | 1.74 MiB/s, done.
+Total 29 (delta 11), reused 19 (delta 6), pack-reused 0
+remote: Resolving deltas: 100% (11/11), done.
+To https://github.com/devfabien/Git-exercise-clone.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'git-copy/main'.
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 352 bytes | 352.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/devfabien/Gym-git-exercise-solution.git
+   f1fd637..845637e  main -> main
+branch 'main' set up to track 'origin/main'.
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$
+
+
+ ```
