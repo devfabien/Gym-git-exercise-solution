@@ -403,3 +403,52 @@ $
 
 
  ```
+
+ ```bash
+ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    home.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git add .
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    home.html -> index.html
+
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git commit -m "rename home to index"
+[main 3a9849c] rename home to index
+ 1 file changed, 12 insertions(+), 12 deletions(-)
+ rename home.html => index.html (94%)
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 506 bytes | 253.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/devfabien/Gym-git-exercise-solution.git
+   f12d0f4..3a9849c  main -> main
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> cd..
+PS C:\Users\The Gym\Documents\Gym> git clone https://github.com/devfabien/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+Receiving objects: 100% (107/107), 1.95 MiB | 578.00 KiB/s, done.ceiving objects:  97% (104/107), 1.62 MiB | 519.00 KiB/s
+Resolving deltas:   0% (0/5)
+Resolving deltas: 100% (5/5), done.
+PS C:\Users\The Gym\Documents\Gym> 
+ ```
