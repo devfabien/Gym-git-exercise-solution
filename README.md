@@ -401,7 +401,116 @@ branch 'main' set up to track 'origin/main'.
 The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
 $
 
+ ```
 
+ ### Exercise2
+
+
+```bash
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/footer)
+$ git add .
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/footer)
+$ git status
+On branch ft/footer
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   footer.html
+
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/footer)
+$ git commit -m "adding the links part"
+[ft/footer 413f35a] adding the links part
+ 1 file changed, 11 insertions(+)
+ create mode 100644 footer.html
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/footer)
+$ git status
+On branch ft/footer
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   footer.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/footer)
+$ git add .
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/footer)
+$ git commit -m "adding copyright"
+[ft/footer f9e01be] adding copyright
+ 1 file changed, 1 insertion(+)
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/footer)
+$ git push --set-upstream origin ft/footer
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/bin/gi
+t-askpass.exe'
+Username for 'https://github.com': devfabien
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/bin/gi
+t-askpass.exe'
+Password for 'https://devfabien@github.com':
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 728 bytes | 728.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/devfabien/Gym-git-exercise-solution/pull/new/ft/
+footer
+remote:
+To https://github.com/devfabien/Gym-git-exercise-solution.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/squashing)
+$ git merge --squash ft/footer
+Updating f12d0f4..f9e01be
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ create mode 100644 footer.html
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/squashing)
+$ git statuss
+git: 'statuss' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/squashing)
+$ git status
+On branch ft/squashing
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   footer.html
+
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/squashing)
+$ git commit -m "footer changes squashing"
+[ft/squashing 1d81e2b] footer changes squashing
+ 1 file changed, 12 insertions(+)
+ create mode 100644 footer.html
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/squashing)
+$ git push --set-upstream origin ft/squashing
  ```
 
 ## Bundle5 
@@ -441,6 +550,22 @@ Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
 Delta compression using up to 4 threads
 Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 465 bytes | 465.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/devfabien/Gym-git-exercise-solution/pull/new/ft/
+squashing
+remote:
+To https://github.com/devfabien/Gym-git-exercise-solution.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+
+The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/squashing)
+$
+
+
 Writing objects: 100% (3/3), 506 bytes | 253.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
