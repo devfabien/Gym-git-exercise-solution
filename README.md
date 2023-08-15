@@ -511,6 +511,41 @@ $ git commit -m "footer changes squashing"
 
 The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/squashing)
 $ git push --set-upstream origin ft/squashing
+ ```
+
+## Bundle5 
+
+### Exercise2
+
+
+ ```bash
+ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    home.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git add .
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    home.html -> index.html
+
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git commit -m "rename home to index"
+[main 3a9849c] rename home to index
+ 1 file changed, 12 insertions(+), 12 deletions(-)
+ rename home.html => index.html (94%)
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> git push
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
 Delta compression using up to 4 threads
@@ -530,4 +565,167 @@ branch 'ft/squashing' set up to track 'origin/ft/squashing'.
 The Gym@DESKTOP-249BB42 MINGW64 ~/Documents/Gym/Gym-git-exercise-solution (ft/squashing)
 $
 
-```
+
+Writing objects: 100% (3/3), 506 bytes | 253.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/devfabien/Gym-git-exercise-solution.git
+   f12d0f4..3a9849c  main -> main
+PS C:\Users\The Gym\Documents\Gym\Gym-git-exercise-solution> cd..
+PS C:\Users\The Gym\Documents\Gym> git clone https://github.com/devfabien/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (10/10), done.
+Receiving objects: 100% (107/107), 1.95 MiB | 578.00 KiB/s, done.ceiving objects:  97% (104/107), 1.62 MiB | 519.00 KiB/s
+Resolving deltas:   0% (0/5)
+Resolving deltas: 100% (5/5), done.
+PS C:\Users\The Gym\Documents\Gym> 
+git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git commit -m "changing the title to welcome to our restaurant"     
+[main ed468f4] changing the title to welcome to our restaurant
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/devfabien/git-cafe-exercise.git
+   d1d3f9c..ed468f4  main -> main
+
+ ```
+ ## Bundle6
+
+ ### exercise1
+
+ ```bash
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git checkout -b ft-menu
+Switched to a new branch 'ft-menu'
+On branch ft-menu
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        menu.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git add .
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git commit -m "adding menu page"
+ 1 file changed, 13 insertions(+)
+ create mode 100644 menu.html
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git push
+fatal: The current branch ft-menu has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft-menu
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git push --set-upstream origin ft-menu
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 444 bytes | 444.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft-menu' on GitHub by visiting:
+remote:      https://github.com/devfabien/git-cafe-exercise/pull/new/ft-menu
+remote:
+To https://github.com/devfabien/git-cafe-exercise.git
+ * [new branch]      ft-menu -> ft-menu
+branch 'ft-menu' set up to track 'origin/ft-menu'.
+
+ ```
+
+ ### Exercise 2
+
+ ```bash
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git checkout -b ft/bug-fix
+Switched to a new branch 'ft/bug-fix'
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Contact.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git add .
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git commit -m "changing index-4 to contact"
+ 1 file changed, 203 insertions(+), 203 deletions(-)
+ rename index-4.html => Contact.html (97%)
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git push
+fatal: The current branch ft/bug-fix has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/bug-fix
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise>  git push --set-upstream origin ft/bug-fix
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.49 KiB | 1.25 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bug-fix' on GitHub by visiting:
+remote:      https://github.com/devfabien/git-cafe-exercise/pull/new/ft/bug-fix
+remote:
+To https://github.com/devfabien/git-cafe-exercise.git
+ * [new branch]      ft/bug-fix -> ft/bug-fix
+branch 'ft/bug-fix' set up to track 'origin/ft/bug-fix'.
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> 
+ ```
+ ### Exercise3
+
+ ```bash
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git status
+On branch ft/bug-fix
+Your branch is up to date with 'origin/ft/bug-fix'.
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git status
+On branch ft/bug-fix
+Your branch is up to date with 'origin/ft/bug-fix'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git status
+On branch ft/bug-fix
+Your branch is up to date with 'origin/ft/bug-fix'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Contact.html
+
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git commit -m "changing the hot fix number"
+[ft/bug-fix 0768fc4] changing the hot fix number
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\The Gym\Documents\Gym\git-cafe-exercise> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 303 bytes | 303.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/devfabien/git-cafe-exercise.git
+   c9a4d5f..0768fc4  ft/bug-fix -> ft/bug-fix
+ ```
